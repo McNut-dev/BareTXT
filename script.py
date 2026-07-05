@@ -1,6 +1,14 @@
 import os
+import sys
 from tkinter import *
 from tkinter import filedialog
+
+def get_asset_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 root = Tk()
 root.geometry("800x600")
@@ -8,7 +16,10 @@ root.minsize(475, 300)
 root.title("BareTXT")
 
 try:
-    root.iconphoto(False, PhotoImage(file="BareTXTicon.png"))
+    png_path = get_asset_path('BareTXTicon.png')
+    img = PhotoImage(file=png_path)
+    root.iconphoto(False,img)
+    root.image = img
 except Exception:
     pass
 
@@ -85,7 +96,10 @@ def open_about(event=None):
     about_window.grab_set()
 
     try:
-        about_window.iconphoto(False, PhotoImage(file="BareTXTicon.png"))
+        png_path = get_asset_path('BareTXTicon.png')
+        img = PhotoImage(file=png_path)
+        about_window.iconphoto(False, img)
+        about_window.image = img
     except Exception:
         pass
 
