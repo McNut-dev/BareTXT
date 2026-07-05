@@ -72,7 +72,6 @@ def exit_app(event=None):
     root.destroy()
 
 
-
 def create_undo_checkpoint(event):
     text_area.edit_separator()
 
@@ -173,7 +172,7 @@ text_area = Text(
     autoseparators=False,
     bg="#1a1a1a",
     fg="#dbdbdb",
-    font=("Arial", 12),
+    font=("Consolas", 12),
     insertbackground="white",
     relief="flat",
     padx=5,
@@ -185,7 +184,6 @@ text_area.focus_set()
 button_frame = Frame(root, bg="#212121")
 button_frame.grid(row=1, column=0, padx=15, pady=(0, 15), sticky="nsew")
 button_frame.columnconfigure(1, weight=1)
-
 
 
 about_button = Button(
