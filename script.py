@@ -72,6 +72,7 @@ def exit_app(event=None):
     root.destroy()
 
 
+
 def create_undo_checkpoint(event):
     text_area.edit_separator()
 
@@ -107,6 +108,9 @@ def open_about(event=None):
 
     frame = Frame(about_window, bg="#1a1a1a", bd=2, relief="flat")
     frame.pack(padx=25, pady=25, fill="both", expand=True)
+
+    def exit_about(event=None):
+        about_window.destroy()
 
     about_header_text = Label(
         frame,
@@ -161,6 +165,8 @@ def open_about(event=None):
 
     credits.pack(pady=25)
 
+    root.bind_all("<Escape>", exit_about)
+
 text_area = Text(
     root,
     undo=True,
@@ -179,6 +185,8 @@ text_area.focus_set()
 button_frame = Frame(root, bg="#212121")
 button_frame.grid(row=1, column=0, padx=15, pady=(0, 15), sticky="nsew")
 button_frame.columnconfigure(1, weight=1)
+
+
 
 about_button = Button(
     button_frame,
