@@ -15,7 +15,7 @@
 
   <img width="802" height="632" alt="BareTXT grocery list example" src="https://github.com/user-attachments/assets/4a432eb7-aebc-4b2a-b187-6c535cd84d78" />
 
-* **Write down code**
+* **Write code**
 
   <img width="802" height="632" alt="BareTXT code editing example" src="https://github.com/user-attachments/assets/700e4e8f-72d9-492c-91e6-c3faa9ab4919" />
 
