@@ -5,7 +5,7 @@
 ### How to install:
 1. Head to the **Releases** section.
 2. Download the latest `.exe` file.
-3. Run it immediately (**no installation required!**)
+3. Run it
 
 ---
 
