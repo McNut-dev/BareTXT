@@ -2,11 +2,6 @@
 
 **BareTXT** is a focused, minimalistic text editor designed to contain only the absolute essentials: a text box, file opening, and file saving.
 
-### How to install:
-1. Head to the **Releases** section.
-2. Download the latest `.exe` file.
-3. Run it
-
 ---
 
 ## What you can do with BareTXT:
